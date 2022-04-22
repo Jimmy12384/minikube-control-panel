@@ -1,0 +1,10 @@
+.vertical-menu {
+  max-width: var(--verticalMenuWidth);
+  padding:0px;
+  flex: 1;
+  background-color: var(--secondary);
+  padding-top: 10px;
+  flex-direction: column;
+  box-shadow: 5px 5px 15px -5px #000000;
+}
+

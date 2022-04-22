@@ -1,0 +1,26 @@
+.flex-end {
+  display: flex;
+  flex-direction: column;
+}
+
+.minikube-status {
+  height: 25px;
+  color: black;
+  font-size: 0.85em;
+  display: flex;
+  font-weight: 600;
+  box-shadow: 5px 5px 15px -5px #000000;
+  cursor: default;
+}
+
+.minikube-active {
+    background-color: var(--valid);
+}
+
+.minikube-inactive {
+  background-color: var(--invalid);
+}
+
+.minikube-status > span {
+    margin: auto;
+}

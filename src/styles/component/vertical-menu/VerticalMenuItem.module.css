@@ -1,0 +1,42 @@
+.menu-image  {
+  margin-left: 10px;
+  margin-right: 11px;
+  display: flex;
+}
+
+.link {
+  flex-direction: row;
+  display: flex;
+  flex: 1;
+  text-decoration: none;
+}
+
+.link {
+  margin-left: 10px;
+  color: #A4A4A4;
+  transition: 0.2s;
+}
+
+.link:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.link:hover .svg {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(356deg) brightness(111%) contrast(101%);
+}
+
+.svg {
+  filter: invert(77%) sepia(0%) saturate(0%) hue-rotate(175deg) brightness(86%) contrast(90%);
+  transition: 0.2s;
+}
+
+.active {
+  color: white !important;
+  font-weight: 550;
+}
+
+.active .svg {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(356deg) brightness(111%) contrast(101%);
+}
+
