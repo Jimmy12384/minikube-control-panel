@@ -4,22 +4,30 @@
   height: var(--headerHeight);
   background-color: var(--tertiary);
   align-items: center;
-  padding-left:10px;
+  padding-left: 10px;
   box-shadow: 5px 5px 15px -5px #000000;
   z-index: 10;
 }
 
 .headerImage {
   position: relative;
-  left: calc(var(--headerHeight) / 4 );
+  left: calc(var(--headerHeight) / 4);
 }
 
 .title {
-  padding-left: 5px
+  padding-left: 5px;
 }
 
 .flexEnd {
   display: flex;
   flex: 1;
   justify-content: flex-end;
+}
+
+.headerLink {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  z-index: 10;
+  cursor: pointer;
 }

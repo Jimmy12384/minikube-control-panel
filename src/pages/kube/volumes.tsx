@@ -1,5 +1,11 @@
+import Card from "@/component/common/Card";
 const KubeVolumesPage = () => {
-	return <>test volumes</>;
+  return (
+    <>
+      <Card>Volumes</Card>
+      <Card>Volume Claims</Card>
+    </>
+  );
 };
 
 export default KubeVolumesPage;

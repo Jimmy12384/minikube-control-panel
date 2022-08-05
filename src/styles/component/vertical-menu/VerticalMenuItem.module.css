@@ -1,7 +1,9 @@
-.menu-image  {
+.menu-image {
   margin-left: 10px;
   margin-right: 11px;
   display: flex;
+  position: relative;
+  top: 15px;
 }
 
 .link {
@@ -13,7 +15,7 @@
 
 .link {
   margin-left: 10px;
-  color: #A4A4A4;
+  color: var(--menu-text);
   transition: 0.2s;
 }
 
@@ -23,11 +25,13 @@
 }
 
 .link:hover .svg {
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(356deg) brightness(111%) contrast(101%);
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(356deg)
+    brightness(111%) contrast(101%);
 }
 
 .svg {
-  filter: invert(77%) sepia(0%) saturate(0%) hue-rotate(175deg) brightness(86%) contrast(90%);
+  filter: invert(77%) sepia(0%) saturate(0%) hue-rotate(175deg) brightness(86%)
+    contrast(90%);
   transition: 0.2s;
 }
 
@@ -37,6 +41,24 @@
 }
 
 .active .svg {
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(356deg) brightness(111%) contrast(101%);
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(356deg)
+    brightness(111%) contrast(101%);
 }
 
+.menu-title-box {
+  display: flex;
+  flex: 1;
+  min-width: var(--verticalMenuWidth);
+}
+
+.menu-title-wrapper {
+  overflow: hidden;
+  width: 100%;
+  transition: 0.4s;
+}
+
+@media screen and (max-width: 1300px) {
+  .menu-title-wrapper {
+    width: 0%;
+  }
+}

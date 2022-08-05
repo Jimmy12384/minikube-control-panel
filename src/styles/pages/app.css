@@ -1,15 +1,17 @@
 :root {
   --background: #161a1d;
+  --background-light: #1f2d4146;
   --primary: #eb5e28;
   --secondary: #3a2318;
   --tertiary: #8a4020;
   --tertiary-light: #a5512d;
-  --valid: #88D18A;
-  --invalid: #C75252;
-  --text: #fff;
-
+  --valid: #88d18a;
+  --invalid: #c75252;
+  --text: #ffffff;
+  --menu-text: #a4a4a4;
   --headerHeight: 65px;
   --verticalMenuWidth: 250px;
+  --cardPadding: 7px;
 }
 
 .flex-horizontal {
@@ -37,12 +39,13 @@
 }
 
 .main-wrapper > * > * {
-  padding: calc(var(--headerHeight) / 4 );
+  padding: calc(var(--headerHeight) / 4);
 }
 
 @font-face {
   font-family: Montserrat;
   src: url(../../../public/assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+  font-display: swap;
 }
 
 .flex-vertical {
@@ -51,4 +54,32 @@
   flex: 1;
   padding: 0;
   max-width: var(--verticalMenuWidth);
+  transition: 0.4s;
+}
+
+@media screen and (max-width: 1300px) {
+  .flex-vertical {
+    position: absolute;
+    height: calc(100% - 65px);
+    max-width: 70px;
+  }
+
+  .flex-vertical:hover {
+    max-width: var(--verticalMenuWidth);
+  }
+
+  .flex-vertical:hover [class*="menu-title-wrapper"] {
+    width: 100%;
+  }
+
+  .content-wrapper {
+    margin-left: 70px;
+  }
+}
+
+.content-wrapper {
+  padding: var(--cardPadding);
+  display: flex;
+  flex: 1;
+  overflow: auto;
 }
