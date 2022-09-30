@@ -1,0 +1,27 @@
+.card {
+  background-color: var(--background-light);
+  margin: var(--cardPadding);
+  padding: 15px;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 11px -1px #000000;
+  min-height: 300px;
+}
+
+.verticalCards {
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontalCards {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+@media (min-width: 1080px) {
+  .horizontalCards {
+    flex-direction: row;
+  }
+}

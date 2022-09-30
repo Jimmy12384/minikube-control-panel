@@ -1,0 +1,28 @@
+.colorPicker {
+  padding: 15px;
+}
+
+.colorInput {
+  align-self: center;
+  max-height: 33px;
+}
+
+.themeItem {
+  margin-top: -15px
+}
+
+.themeForm {
+  margin-top: 18px;
+}
+.colorTitle {
+  display: flex;
+  max-width: 100px;
+  flex: 1;
+  justify-content: flex-end;
+}
+.presetDropdown {
+  margin-bottom: 18px;
+  display: flex;
+  flex: 1;
+  max-width: 381px;
+}
